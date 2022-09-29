@@ -1,0 +1,5 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
