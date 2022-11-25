@@ -1,4 +1,4 @@
-# ny-house
+# my-house
 
 Project for training kotlin.
 

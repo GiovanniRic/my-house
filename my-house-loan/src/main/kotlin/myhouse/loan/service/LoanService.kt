@@ -1,4 +1,4 @@
-package com.nyhouse.service
+package myhouse.loan.service
 
 interface LoanService {
 

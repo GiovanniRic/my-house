@@ -1,4 +1,5 @@
-package com.nyhouse.service
+package myhouse.loan.service
+
 
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
