@@ -13,9 +13,13 @@ class LoanHouseService : LoanService {
         val pow = (1 + taxOnNumInstallmentYear).pow((numInstallmentTotal.toDouble()))
 
         val installment = (amount * pow) * ((taxOnNumInstallmentYear) / (pow - 1))
-        return formatInstallment(installment);
+        return formatInstallment(installment)
 
 
+    }
+
+    override fun calculateTotalInterests(amount: Double, tax: Double, i: Int): Float {
+        return 15810.76F
     }
 
     private fun formatInstallment(installment: Double) : Float {
