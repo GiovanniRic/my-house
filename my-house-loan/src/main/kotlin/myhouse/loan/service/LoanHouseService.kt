@@ -18,8 +18,13 @@ class LoanHouseService : LoanService {
 
     }
 
-    override fun calculateTotalInterests(amount: Double, tax: Double, i: Int): Float {
-        return 15810.76F
+    override fun calculateTotalInterests(amount: Double, tax: Double, years: Int): Float {
+
+        val installment = calculateInstallmentMonthly(amount, tax, years)
+        val totalLoan = installment * (years * 12)
+        val totalInterests = totalLoan - amount;
+
+        return formatInstallment(totalInterests)
     }
 
     private fun formatInstallment(installment: Double) : Float {

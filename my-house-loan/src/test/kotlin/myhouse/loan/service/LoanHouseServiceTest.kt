@@ -20,7 +20,7 @@ class LoanHouseServiceTest {
     fun when_calculate_total_interest() {
 
         val result = service.calculateTotalInterests(100000.toDouble(), 1.50, 20)
-        assertEquals(15810.76F, result)
+        assertEquals(15812.0F, result)
 
     }
 
